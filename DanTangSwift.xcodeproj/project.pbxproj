@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18377F541F84C78C00D05D00 /* YMNeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18377F531F84C78C00D05D00 /* YMNeeViewController.swift */; };
 		187EC82E1F7D52A70025CEA7 /* DanTangSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC82D1F7D52A70025CEA7 /* DanTangSwiftTests.swift */; };
 		187EC8391F7D52A70025CEA7 /* DanTangSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC8381F7D52A70025CEA7 /* DanTangSwiftUITests.swift */; };
 		18E0319A1F7DF42100900414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031871F7DEB6800900414 /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18377F531F84C78C00D05D00 /* YMNeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMNeeViewController.swift; sourceTree = "<group>"; };
 		187EC8151F7D52A70025CEA7 /* DanTangSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTangSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC8291F7D52A70025CEA7 /* DanTangSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanTangSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC82D1F7D52A70025CEA7 /* DanTangSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangSwiftTests.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				18E031951F7DEFBA00900414 /* LoginViewController.swift */,
+				18377F531F84C78C00D05D00 /* YMNeeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E031A61F7DFCB000900414 /* UIView+Extension.swift in Sources */,
+				18377F541F84C78C00D05D00 /* YMNeeViewController.swift in Sources */,
 				18E0319B1F7DF5BD00900414 /* LoginViewController.swift in Sources */,
 				18E0319A1F7DF42100900414 /* AppDelegate.swift in Sources */,
 			);

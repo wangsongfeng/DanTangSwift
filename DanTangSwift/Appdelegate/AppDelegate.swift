@@ -21,6 +21,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController=LoginViewController()
         window?.makeKeyAndVisible()
         
+//        if !UserDefaults.standard.bool(forKey: "YMFirstLaunch") {
+//
+//        }else {
+//            window?.rootViewController=LoginViewController()
+//        }
+        let string = "呵呵"
+        
+        let userdefault = UserDefaults.standard
+        
+        userdefault.set(string, forKey: "hehe")
+        
+        let name : String = UserDefaults.standard.string(forKey: "hehe")!
+        print(name)
+        
+        
+//OC
+//
+//        NSUserDefaults * defaults=[NSUserDefaults standardUserDefaults];
+//        [defaults setBool:YES forKey:@"first"];
+//
+//        [defaults synchronize];
         return true
     }
 
