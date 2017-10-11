@@ -18,23 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window=UIWindow(frame:UIScreen.main.bounds)
         window?.backgroundColor=UIColor.white
-        window?.rootViewController=LoginViewController()
         window?.makeKeyAndVisible()
-        
+        window?.rootViewController=DTTabBarController()
+
 //        if !UserDefaults.standard.bool(forKey: "YMFirstLaunch") {
 //
 //        }else {
 //            window?.rootViewController=LoginViewController()
 //        }
-        let string = "呵呵"
-        
-        let userdefault = UserDefaults.standard
-        
-        userdefault.set(string, forKey: "hehe")
-        
-        let name : String = UserDefaults.standard.string(forKey: "hehe")!
-        print(name)
-        
+//        let string = "呵呵"
+//
+//        let userdefault = UserDefaults.standard
+//
+//        userdefault.set(string, forKey: "hehe")
+//
+//        let name : String = UserDefaults.standard.string(forKey: "hehe")!
+//        print(name)
+//
         
 //OC
 //
