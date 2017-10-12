@@ -16,3 +16,8 @@ func DTColor(r:CGFloat, g:CGFloat, b:CGFloat ,a:CGFloat) ->UIColor {
 func DTGlobalRedColor()-> UIColor {
     return DTColor(r: 245, g: 80, b: 83, a: 1.0)
 }
+
+//背景灰色
+func DTGlobalColor()-> UIColor {
+    return DTColor(r: 240, g: 240, b: 240, a: 1.0)
+}

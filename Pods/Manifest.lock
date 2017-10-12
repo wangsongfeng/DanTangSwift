@@ -1,3 +1,15 @@
-PODFILE CHECKSUM: 8fec375efd0637aa1a931fcf8e8a35b2a0fb9e93
+PODS:
+  - FDFullscreenPopGesture (1.1)
+  - SVProgressHUD (2.2.1)
+
+DEPENDENCIES:
+  - FDFullscreenPopGesture (~> 1.1)
+  - SVProgressHUD (~> 2.2.1)
+
+SPEC CHECKSUMS:
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
+
+PODFILE CHECKSUM: ad60772ad8ebf33bacae7e235eb0e57d4362d7bb
 
 COCOAPODS: 1.3.1

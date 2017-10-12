@@ -20,12 +20,12 @@ class DTTabBarController: UITabBarController {
     
     private func addChildViewControllers () {
 
-        addChildViewController(controller: DanTangViewController(), title: "单糖", imageName: "TabBar_home_23x23_")
-        addChildViewController(controller: ProductViewController(), title: "单品", imageName: "TabBar_gift_23x23_")
-        addChildViewController(controller: CategoryViewController(), title: "分类", imageName: "TabBar_category_23x23_")
-        addChildViewController(controller: MeViewController(), title: "我的", imageName: "TabBar_me_boy_23x23_")
+        addChildViewControllers(controller: DanTangViewController(), title: "单糖", imageName: "TabBar_home_23x23_")
+        addChildViewControllers(controller: ProductViewController(), title: "单品", imageName: "TabBar_gift_23x23_")
+        addChildViewControllers(controller: CategoryViewController(), title: "分类", imageName: "TabBar_category_23x23_")
+        addChildViewControllers(controller: MeViewController(), title: "我的", imageName: "TabBar_me_boy_23x23_")
     }
-    private func addChildViewController(controller : UIViewController, title : String, imageName : String) {
+    private func addChildViewControllers(controller : UIViewController, title : String, imageName : String) {
         var imageT = UIImage.init(named: imageName)
         imageT=imageT?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         

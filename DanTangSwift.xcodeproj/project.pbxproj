@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181EBE651F8E723E00580B1C /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181EBE641F8E723E00580B1C /* Asset.xcassets */; };
 		18377F541F84C78C00D05D00 /* YMNeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18377F531F84C78C00D05D00 /* YMNeeViewController.swift */; };
 		183D8BC11F8BD491005E2BF9 /* DTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D8BC01F8BD491005E2BF9 /* DTTabBarController.swift */; };
 		183D8BD31F8BD713005E2BF9 /* DanTangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D8BD21F8BD713005E2BF9 /* DanTangViewController.swift */; };
 		183D8BD51F8BD71E005E2BF9 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D8BD41F8BD71E005E2BF9 /* MeViewController.swift */; };
 		183D8BDA1F8BD75B005E2BF9 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D8BD91F8BD75B005E2BF9 /* CategoryViewController.swift */; };
 		183D8BDC1F8BD81F005E2BF9 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D8BDB1F8BD81F005E2BF9 /* ProductViewController.swift */; };
+		1850B75F1F8EFA7100D5C809 /* DTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850B75E1F8EFA7100D5C809 /* DTBaseViewController.swift */; };
+		1850B7611F8F05DD00D5C809 /* RegiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850B7601F8F05DD00D5C809 /* RegiseViewController.swift */; };
 		187EC82E1F7D52A70025CEA7 /* DanTangSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC82D1F7D52A70025CEA7 /* DanTangSwiftTests.swift */; };
 		187EC8391F7D52A70025CEA7 /* DanTangSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC8381F7D52A70025CEA7 /* DanTangSwiftUITests.swift */; };
+		1896ACB11F8E57840056445F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1896ACB01F8E57840056445F /* Main.storyboard */; };
 		18C1444E1F8B080D00181CD7 /* DTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1444D1F8B080D00181CD7 /* DTNavigationController.swift */; };
 		18C144511F8B08F400181CD7 /* DTConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C144501F8B08F400181CD7 /* DTConst.swift */; };
 		18E0319A1F7DF42100900414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031871F7DEB6800900414 /* AppDelegate.swift */; };
 		18E0319B1F7DF5BD00900414 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031951F7DEFBA00900414 /* LoginViewController.swift */; };
 		18E031A61F7DFCB000900414 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031A51F7DFCB000900414 /* UIView+Extension.swift */; };
-		F3C229D910A4153613A3302A /* libPods-DanTangSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5CB05013C614C18DBE5576 /* libPods-DanTangSwift.a */; };
+		F68B753E4033BB9A5BE0CFFF /* Pods_DanTangSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10300D8376F4058A99388F97 /* Pods_DanTangSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10300D8376F4058A99388F97 /* Pods_DanTangSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanTangSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		181EBE641F8E723E00580B1C /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 		18377F531F84C78C00D05D00 /* YMNeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMNeeViewController.swift; sourceTree = "<group>"; };
 		183D8BC01F8BD491005E2BF9 /* DTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTTabBarController.swift; sourceTree = "<group>"; };
 		183D8BD21F8BD713005E2BF9 /* DanTangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangViewController.swift; sourceTree = "<group>"; };
 		183D8BD41F8BD71E005E2BF9 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		183D8BD91F8BD75B005E2BF9 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		183D8BDB1F8BD81F005E2BF9 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		1850B75E1F8EFA7100D5C809 /* DTBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTBaseViewController.swift; sourceTree = "<group>"; };
+		1850B7601F8F05DD00D5C809 /* RegiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiseViewController.swift; sourceTree = "<group>"; };
 		187EC8151F7D52A70025CEA7 /* DanTangSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTangSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC8291F7D52A70025CEA7 /* DanTangSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanTangSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC82D1F7D52A70025CEA7 /* DanTangSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangSwiftTests.swift; sourceTree = "<group>"; };
@@ -54,15 +62,14 @@
 		187EC8341F7D52A70025CEA7 /* DanTangSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanTangSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC8381F7D52A70025CEA7 /* DanTangSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangSwiftUITests.swift; sourceTree = "<group>"; };
 		187EC83A1F7D52A70025CEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1896ACB01F8E57840056445F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		18C1444D1F8B080D00181CD7 /* DTNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTNavigationController.swift; sourceTree = "<group>"; };
 		18C144501F8B08F400181CD7 /* DTConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTConst.swift; sourceTree = "<group>"; };
 		18E031871F7DEB6800900414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18E031881F7DEB6800900414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E0318D1F7DEB6800900414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E031951F7DEFBA00900414 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18E0319F1F7DF9E200900414 /* DanTangSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DanTangSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		18E031A51F7DFCB000900414 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		6B5CB05013C614C18DBE5576 /* libPods-DanTangSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DanTangSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDED7963F1A629F815EEDD12 /* Pods-DanTangSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTangSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanTangSwift/Pods-DanTangSwift.release.xcconfig"; sourceTree = "<group>"; };
 		E264CE7ED620A27E82DECDC7 /* Pods-DanTangSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanTangSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanTangSwift/Pods-DanTangSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C229D910A4153613A3302A /* libPods-DanTangSwift.a in Frameworks */,
+				F68B753E4033BB9A5BE0CFFF /* Pods_DanTangSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +307,7 @@
 			children = (
 				18C1444D1F8B080D00181CD7 /* DTNavigationController.swift */,
 				183D8BC01F8BD491005E2BF9 /* DTTabBarController.swift */,
+				1850B75E1F8EFA7100D5C809 /* DTBaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -330,8 +338,9 @@
 			isa = PBXGroup;
 			children = (
 				18E031871F7DEB6800900414 /* AppDelegate.swift */,
-				18E031881F7DEB6800900414 /* Assets.xcassets */,
 				18E0318D1F7DEB6800900414 /* Info.plist */,
+				1896ACB01F8E57840056445F /* Main.storyboard */,
+				181EBE641F8E723E00580B1C /* Asset.xcassets */,
 			);
 			path = Appdelegate;
 			sourceTree = "<group>";
@@ -349,6 +358,7 @@
 			children = (
 				18E031951F7DEFBA00900414 /* LoginViewController.swift */,
 				18377F531F84C78C00D05D00 /* YMNeeViewController.swift */,
+				1850B7601F8F05DD00D5C809 /* RegiseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -365,7 +375,7 @@
 		2E1BC5D875963354F51E2593 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B5CB05013C614C18DBE5576 /* libPods-DanTangSwift.a */,
+				10300D8376F4058A99388F97 /* Pods_DanTangSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -490,6 +500,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181EBE651F8E723E00580B1C /* Asset.xcassets in Resources */,
+				1896ACB11F8E57840056445F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,9 +528,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DanTangSwift/Pods-DanTangSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -566,8 +583,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				183D8BDA1F8BD75B005E2BF9 /* CategoryViewController.swift in Sources */,
+				1850B7611F8F05DD00D5C809 /* RegiseViewController.swift in Sources */,
 				183D8BD51F8BD71E005E2BF9 /* MeViewController.swift in Sources */,
 				18E031A61F7DFCB000900414 /* UIView+Extension.swift in Sources */,
+				1850B75F1F8EFA7100D5C809 /* DTBaseViewController.swift in Sources */,
 				183D8BDC1F8BD81F005E2BF9 /* ProductViewController.swift in Sources */,
 				183D8BC11F8BD491005E2BF9 /* DTTabBarController.swift in Sources */,
 				183D8BD31F8BD713005E2BF9 /* DanTangViewController.swift in Sources */,
@@ -659,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -710,7 +729,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -728,11 +747,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5PE2ZM23A;
 				INFOPLIST_FILE = "$(SRCROOT)/DanTangSwift/Appdelegate/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oufei.com.DanTangSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DanTangSwift/Other/DanTangSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/单糖Swift/DanTangSwift/Other/DanTangSwift-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -750,11 +769,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5PE2ZM23A;
 				INFOPLIST_FILE = "$(SRCROOT)/DanTangSwift/Appdelegate/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = oufei.com.DanTangSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DanTangSwift/Other/DanTangSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/单糖Swift/DanTangSwift/Other/DanTangSwift-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
