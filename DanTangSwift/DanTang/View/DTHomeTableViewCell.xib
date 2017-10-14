@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="DTHomeTableViewCell" customModule="DanTangSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgs" translatesAutoresizingMaskIntoConstraints="NO" id="yCW-yU-S5H">
+                        <rect key="frame" x="8" y="8" width="304" height="143.5"/>
+                    </imageView>
+                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jev-We-oJw">
+                        <rect key="frame" x="252" y="18" width="50" height="25"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="e2f-EF-rMc"/>
+                            <constraint firstAttribute="width" constant="50" id="ppU-G5-3JP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="999" image="Feed_FavoriteIcon_17x17_"/>
+                        <connections>
+                            <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="U5E-GU-533"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人生能有几多愁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60u-eq-30w">
+                        <rect key="frame" x="8" y="126.5" width="200" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="9HW-EB-bMa"/>
+                            <constraint firstAttribute="height" constant="25" id="glx-J6-E3c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.92852176050000002" green="0.92852176050000002" blue="0.92852176050000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yCW-yU-S5H" secondAttribute="bottom" constant="8" id="1H9-qw-rTW"/>
+                    <constraint firstAttribute="trailing" secondItem="Jev-We-oJw" secondAttribute="trailing" constant="18" id="G4e-7J-odY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="60u-eq-30w" secondAttribute="bottom" id="Lww-Yv-vhD"/>
+                    <constraint firstAttribute="trailing" secondItem="yCW-yU-S5H" secondAttribute="trailing" constant="8" id="McR-29-HBX"/>
+                    <constraint firstItem="Jev-We-oJw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="UhH-KE-v1M"/>
+                    <constraint firstItem="60u-eq-30w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="gVg-55-cOD"/>
+                    <constraint firstItem="yCW-yU-S5H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="kik-iU-dTZ"/>
+                    <constraint firstItem="yCW-yU-S5H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="w0s-kd-oT4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgImageView" destination="yCW-yU-S5H" id="YRN-AS-Mmf"/>
+                <outlet property="forverButton" destination="Jev-We-oJw" id="SV5-s0-otn"/>
+                <outlet property="titleLables" destination="60u-eq-30w" id="68u-QC-5kV"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="112"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Feed_FavoriteIcon_17x17_" width="17" height="17"/>
+        <image name="bgs" width="1920" height="1200"/>
+    </resources>
+</document>

@@ -16,11 +16,21 @@
 		183D8BDC1F8BD81F005E2BF9 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D8BDB1F8BD81F005E2BF9 /* ProductViewController.swift */; };
 		1850B75F1F8EFA7100D5C809 /* DTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850B75E1F8EFA7100D5C809 /* DTBaseViewController.swift */; };
 		1850B7611F8F05DD00D5C809 /* RegiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850B7601F8F05DD00D5C809 /* RegiseViewController.swift */; };
+		1850B7DA1F8F712700D5C809 /* DTNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850B7D91F8F712700D5C809 /* DTNetWorkTool.swift */; };
 		187EC82E1F7D52A70025CEA7 /* DanTangSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC82D1F7D52A70025CEA7 /* DanTangSwiftTests.swift */; };
 		187EC8391F7D52A70025CEA7 /* DanTangSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC8381F7D52A70025CEA7 /* DanTangSwiftUITests.swift */; };
 		1896ACB11F8E57840056445F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1896ACB01F8E57840056445F /* Main.storyboard */; };
+		189978E41F91E1B1006AFA70 /* DTHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189978E21F91E1B0006AFA70 /* DTHomeTableViewCell.swift */; };
+		189978E51F91E1B1006AFA70 /* DTHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189978E31F91E1B0006AFA70 /* DTHomeTableViewCell.xib */; };
+		189978E71F91F1F7006AFA70 /* DTHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189978E61F91F1F7006AFA70 /* DTHomeItem.swift */; };
+		189978E91F9215A4006AFA70 /* DTDetaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189978E81F9215A4006AFA70 /* DTDetaiViewController.swift */; };
+		189978EC1F921A58006AFA70 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189978EA1F921A57006AFA70 /* ProductCollectionViewCell.swift */; };
+		189978ED1F921A58006AFA70 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189978EB1F921A57006AFA70 /* ProductCollectionViewCell.xib */; };
+		189978EF1F922976006AFA70 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189978EE1F922976006AFA70 /* ProductModel.swift */; };
 		18C1444E1F8B080D00181CD7 /* DTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C1444D1F8B080D00181CD7 /* DTNavigationController.swift */; };
 		18C144511F8B08F400181CD7 /* DTConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C144501F8B08F400181CD7 /* DTConst.swift */; };
+		18DE433B1F90BD8A0007D989 /* DanTangTopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE433A1F90BD8A0007D989 /* DanTangTopicController.swift */; };
+		18DFB9B51F8FBD9600E2C7A2 /* DTChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFB9B41F8FBD9600E2C7A2 /* DTChannel.swift */; };
 		18E0319A1F7DF42100900414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031871F7DEB6800900414 /* AppDelegate.swift */; };
 		18E0319B1F7DF5BD00900414 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031951F7DEFBA00900414 /* LoginViewController.swift */; };
 		18E031A61F7DFCB000900414 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031A51F7DFCB000900414 /* UIView+Extension.swift */; };
@@ -55,6 +65,7 @@
 		183D8BDB1F8BD81F005E2BF9 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		1850B75E1F8EFA7100D5C809 /* DTBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTBaseViewController.swift; sourceTree = "<group>"; };
 		1850B7601F8F05DD00D5C809 /* RegiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiseViewController.swift; sourceTree = "<group>"; };
+		1850B7D91F8F712700D5C809 /* DTNetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTNetWorkTool.swift; sourceTree = "<group>"; };
 		187EC8151F7D52A70025CEA7 /* DanTangSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTangSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC8291F7D52A70025CEA7 /* DanTangSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanTangSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC82D1F7D52A70025CEA7 /* DanTangSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangSwiftTests.swift; sourceTree = "<group>"; };
@@ -63,8 +74,17 @@
 		187EC8381F7D52A70025CEA7 /* DanTangSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangSwiftUITests.swift; sourceTree = "<group>"; };
 		187EC83A1F7D52A70025CEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1896ACB01F8E57840056445F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		189978E21F91E1B0006AFA70 /* DTHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTHomeTableViewCell.swift; sourceTree = "<group>"; };
+		189978E31F91E1B0006AFA70 /* DTHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DTHomeTableViewCell.xib; sourceTree = "<group>"; };
+		189978E61F91F1F7006AFA70 /* DTHomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTHomeItem.swift; sourceTree = "<group>"; };
+		189978E81F9215A4006AFA70 /* DTDetaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTDetaiViewController.swift; sourceTree = "<group>"; };
+		189978EA1F921A57006AFA70 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		189978EB1F921A57006AFA70 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		189978EE1F922976006AFA70 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		18C1444D1F8B080D00181CD7 /* DTNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTNavigationController.swift; sourceTree = "<group>"; };
 		18C144501F8B08F400181CD7 /* DTConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTConst.swift; sourceTree = "<group>"; };
+		18DE433A1F90BD8A0007D989 /* DanTangTopicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangTopicController.swift; sourceTree = "<group>"; };
+		18DFB9B41F8FBD9600E2C7A2 /* DTChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTChannel.swift; sourceTree = "<group>"; };
 		18E031871F7DEB6800900414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E0318D1F7DEB6800900414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E031951F7DEFBA00900414 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				183D8BD21F8BD713005E2BF9 /* DanTangViewController.swift */,
+				18DE433A1F90BD8A0007D989 /* DanTangTopicController.swift */,
+				189978E81F9215A4006AFA70 /* DTDetaiViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +143,8 @@
 		183D8BC41F8BD6F9005E2BF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18DFB9B41F8FBD9600E2C7A2 /* DTChannel.swift */,
+				189978E61F91F1F7006AFA70 /* DTHomeItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +152,8 @@
 		183D8BC51F8BD6F9005E2BF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				189978E21F91E1B0006AFA70 /* DTHomeTableViewCell.swift */,
+				189978E31F91E1B0006AFA70 /* DTHomeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +211,7 @@
 		183D8BCC1F8BD6F9005E2BF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				189978EE1F922976006AFA70 /* ProductModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +219,8 @@
 		183D8BCD1F8BD6F9005E2BF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				189978EA1F921A57006AFA70 /* ProductCollectionViewCell.swift */,
+				189978EB1F921A57006AFA70 /* ProductCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +344,7 @@
 		18C1444B1F8B07CC00181CD7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1850B7D91F8F712700D5C809 /* DTNetWorkTool.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -501,6 +531,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				181EBE651F8E723E00580B1C /* Asset.xcassets in Resources */,
+				189978E51F91E1B1006AFA70 /* DTHomeTableViewCell.xib in Resources */,
+				189978ED1F921A58006AFA70 /* ProductCollectionViewCell.xib in Resources */,
 				1896ACB11F8E57840056445F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,13 +561,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DanTangSwift/Pods-DanTangSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,10 +621,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				183D8BDA1F8BD75B005E2BF9 /* CategoryViewController.swift in Sources */,
+				189978E91F9215A4006AFA70 /* DTDetaiViewController.swift in Sources */,
+				189978EC1F921A58006AFA70 /* ProductCollectionViewCell.swift in Sources */,
+				189978E41F91E1B1006AFA70 /* DTHomeTableViewCell.swift in Sources */,
 				1850B7611F8F05DD00D5C809 /* RegiseViewController.swift in Sources */,
+				189978E71F91F1F7006AFA70 /* DTHomeItem.swift in Sources */,
 				183D8BD51F8BD71E005E2BF9 /* MeViewController.swift in Sources */,
 				18E031A61F7DFCB000900414 /* UIView+Extension.swift in Sources */,
+				18DFB9B51F8FBD9600E2C7A2 /* DTChannel.swift in Sources */,
+				1850B7DA1F8F712700D5C809 /* DTNetWorkTool.swift in Sources */,
 				1850B75F1F8EFA7100D5C809 /* DTBaseViewController.swift in Sources */,
+				18DE433B1F90BD8A0007D989 /* DanTangTopicController.swift in Sources */,
 				183D8BDC1F8BD81F005E2BF9 /* ProductViewController.swift in Sources */,
 				183D8BC11F8BD491005E2BF9 /* DTTabBarController.swift in Sources */,
 				183D8BD31F8BD713005E2BF9 /* DanTangViewController.swift in Sources */,
@@ -594,6 +639,7 @@
 				18E0319B1F7DF5BD00900414 /* LoginViewController.swift in Sources */,
 				18E0319A1F7DF42100900414 /* AppDelegate.swift in Sources */,
 				18C1444E1F8B080D00181CD7 /* DTNavigationController.swift in Sources */,
+				189978EF1F922976006AFA70 /* ProductModel.swift in Sources */,
 				18C144511F8B08F400181CD7 /* DTConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,10 @@
 
 import UIKit
 
+/// 服务器地址
+let BASE_URL = "http://api.dantangapp.com/"
+
+
 func DTColor(r:CGFloat, g:CGFloat, b:CGFloat ,a:CGFloat) ->UIColor {
     return UIColor.init(red: r / 255.0, green: g/255.0, blue: b/255.0, alpha: a)
 }

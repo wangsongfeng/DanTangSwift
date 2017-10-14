@@ -44,7 +44,7 @@ class DTNavigationController: UINavigationController {
         let navBar = UINavigationBar.appearance()
         navBar.barTintColor=DTGlobalRedColor()
         navBar.tintColor=UIColor.white
-        navBar.titleTextAttributes =  [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20)]
+//        navBar.titleTextAttributes =  [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20)]
 
     }
 
