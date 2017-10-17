@@ -146,5 +146,47 @@ class DTNetWorkTool: NSObject {
         }
         
     }
-   
+    
+    
+    //分类界面 专题数据
+    func loadCategoryCollect(limit : Int, callBack : @escaping (_ collectionItems : [DTCollections])->()) -> Void {
+        SVProgressHUD.show(withStatus: "正在加载...")
+        let url = BASE_URL + "v1/collections"
+        let params = ["limit": limit,
+                      "offset": 0]
+        //请求头
+        let requestHeader:HTTPHeaders = [
+            "Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
+            "Accept": "application/json"
+        ];
+        Alamofire.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: requestHeader).responseJSON { (responseObject) in
+            guard responseObject.result.isSuccess else {
+                SVProgressHUD.showError(withStatus: "加载失败")
+                return
+            }
+            
+            if let value = responseObject.value {
+                let dict = JSON(value)
+                let code = dict["code"].intValue
+                let message = dict["message"].stringValue
+                guard code == 200 else {
+                    SVProgressHUD.showInfo(withStatus: message)
+                    return
+                }
+                
+                SVProgressHUD.dismiss()
+                if let data  = dict["data"].dictionary {
+                    if let collectItem = data["collections"]?.arrayObject
+                    {
+                        var colectionItems = [DTCollections]()
+                        for item in collectItem {
+                            let coll = DTCollections.init(dict: item as! [String : Any])
+                            colectionItems.append(coll)
+                        }
+                        callBack(colectionItems)
+                    }
+                }
+            }
+        }
+    }
 }

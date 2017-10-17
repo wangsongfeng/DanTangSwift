@@ -8,28 +8,37 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController {
+class CategoryViewController: DTBaseViewController {
 
+    
+    //懒加载
+    private lazy var scrollView : UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.frame = CGRect.init(x: 0, y: 0, width: SCREENW, height: SCREENH)
+        scrollView.isScrollEnabled = true
+        scrollView.backgroundColor = DTGlobalColor()
+        return scrollView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor=UIColor.gray
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "Feed_SearchBtn_18x18_"), style: .plain, target: self, action: #selector(categortRightBarBtnItem))
+        setupScrollView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func setupScrollView() {
+        view.addSubview(scrollView)
+        let headerViewController = CategoryHeaderViewController()
+        addChildViewController(headerViewController)
+        let topView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: SCREENW, height: 135))
+        scrollView.addSubview(topView)
+        
+        let headerVC = childViewControllers[0]
+        scrollView.addSubview(headerVC.view)
+        
     }
-    */
-
+    //搜索按钮
+    @objc func categortRightBarBtnItem() -> Void {
+        print("点击了搜索按钮")
+    }
 }

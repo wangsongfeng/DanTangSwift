@@ -7,13 +7,13 @@
 //
 
 import UIKit
-
 class ProductViewController: DTBaseViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
    
     var productItem = [ProductModel]()
     var mainCollectView: UICollectionView?
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         setupCollectView()
         weak var weakSelf = self
         DTNetWorkTool.shareNetWorkTool.loadProductData { (productItem) in
