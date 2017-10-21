@@ -34,11 +34,29 @@ class CategoryViewController: DTBaseViewController {
         scrollView.addSubview(topView)
         
         let headerVC = childViewControllers[0]
-        scrollView.addSubview(headerVC.view)
+        topView.addSubview(headerVC.view)
+        
+        
+        let bottomView = CategoryBottomView.init(frame: CGRect.init(x: 0, y: topView.frame.maxY+10, width: SCREENW, height: SCREENH-160))
+        bottomView.delegate = self
+        scrollView.addSubview(bottomView)
+        scrollView.contentSize = CGSize.init(width: SCREENW, height: bottomView.frame.maxY)
         
     }
     //搜索按钮
     @objc func categortRightBarBtnItem() -> Void {
         print("点击了搜索按钮")
     }
+}
+
+extension CategoryViewController : CategoryBottomViewDelegate {
+    func bottomViewBtnClick(button: UIButton) {
+        let controller = CategoryDetailViewController()
+        controller.title = button.titleLabel?.text
+        controller.id = button.tag
+        controller.type = "风格品类"
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    
 }

@@ -64,7 +64,13 @@ extension CategoryHeaderViewController : UICollectionViewDelegate,UICollectionVi
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let controller = CategoryDetailViewController()
+        let collection = collectionItems[indexPath.row]
+
+        controller.title = collection.title
+        controller.id = collection.id
+        controller.type = "专题合集"
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     
