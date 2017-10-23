@@ -307,7 +307,7 @@ class DTNetWorkTool: NSObject {
                 }
                 SVProgressHUD.dismiss()
                 if let data = dict["data"].dictionary {
-                    if let postsData = data["posts"]?.arrayObject {
+                    if let postsData = data["items"]?.arrayObject {
                         var posts = [CategoryCellectPost]()
                         
                         for item in postsData {

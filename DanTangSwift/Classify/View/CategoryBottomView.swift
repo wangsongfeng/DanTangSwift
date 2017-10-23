@@ -66,7 +66,7 @@ class CategoryBottomView: UIView {
             let group = bottomGroups[index]as! CategoryBottomGroup
             let button = setupButtom(index: index, group: group)
             bottomView.addSubview(button)
-            if index == topGroups.count-1 {
+            if index == bottomGroups.count-1 {
                 bottomView.height = button.frame.maxY + 10.0
             }
         }
