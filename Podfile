@@ -7,4 +7,6 @@ pod 'SVProgressHUD', '~> 2.2.1'
 pod 'Alamofire', '~> 4.5.1'
 pod 'SwiftyJSON', '~> 4.0.0-alpha.1'
 pod 'SDWebImage', '~> 4.1.0'
+pod 'SnapKit', '~> 3.2.0'
+
 end

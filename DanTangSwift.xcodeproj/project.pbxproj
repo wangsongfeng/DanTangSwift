@@ -27,6 +27,7 @@
 		185B028B1F925699002EEB73 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 185B028A1F925699002EEB73 /* Person.m */; };
 		187ABBC91F94F972003EC7B1 /* CategoryHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187ABBC81F94F972003EC7B1 /* CategoryHeaderViewController.swift */; };
 		187ABBCB1F94F9E9003EC7B1 /* DTCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187ABBCA1F94F9E9003EC7B1 /* DTCollections.swift */; };
+		187C5B9D1F9E270000008B89 /* DTMeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C5B9C1F9E270000008B89 /* DTMeHeaderView.swift */; };
 		187EC82E1F7D52A70025CEA7 /* DanTangSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC82D1F7D52A70025CEA7 /* DanTangSwiftTests.swift */; };
 		187EC8391F7D52A70025CEA7 /* DanTangSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187EC8381F7D52A70025CEA7 /* DanTangSwiftUITests.swift */; };
 		1896ACB11F8E57840056445F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1896ACB01F8E57840056445F /* Main.storyboard */; };
@@ -48,7 +49,7 @@
 		18E0319A1F7DF42100900414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031871F7DEB6800900414 /* AppDelegate.swift */; };
 		18E0319B1F7DF5BD00900414 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031951F7DEFBA00900414 /* LoginViewController.swift */; };
 		18E031A61F7DFCB000900414 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E031A51F7DFCB000900414 /* UIView+Extension.swift */; };
-		F68B753E4033BB9A5BE0CFFF /* Pods_DanTangSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10300D8376F4058A99388F97 /* Pods_DanTangSwift.framework */; };
+		F68B753E4033BB9A5BE0CFFF /* Pods_DanTangSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10300D8376F4058A99388F97 /* Pods_DanTangSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		185B028A1F925699002EEB73 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		187ABBC81F94F972003EC7B1 /* CategoryHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderViewController.swift; sourceTree = "<group>"; };
 		187ABBCA1F94F9E9003EC7B1 /* DTCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTCollections.swift; sourceTree = "<group>"; };
+		187C5B9C1F9E270000008B89 /* DTMeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTMeHeaderView.swift; sourceTree = "<group>"; };
 		187EC8151F7D52A70025CEA7 /* DanTangSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanTangSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC8291F7D52A70025CEA7 /* DanTangSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanTangSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187EC82D1F7D52A70025CEA7 /* DanTangSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTangSwiftTests.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		183D8BD11F8BD6F9005E2BF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				187C5B9C1F9E270000008B89 /* DTMeHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -620,6 +624,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,6 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183D8BDA1F8BD75B005E2BF9 /* CategoryViewController.swift in Sources */,
+				187C5B9D1F9E270000008B89 /* DTMeHeaderView.swift in Sources */,
 				189978E91F9215A4006AFA70 /* DTDetaiViewController.swift in Sources */,
 				184D0A571F9BB70D005E67E9 /* CategoryCellectPost.swift in Sources */,
 				185B028B1F925699002EEB73 /* Person.m in Sources */,
@@ -853,9 +859,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/DanTangSwift/Appdelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DSNAPKIT_DEPLOYMENT_LEGACY";
 				PRODUCT_BUNDLE_IDENTIFIER = oufei.com.DanTangSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/单糖Swift/DanTangSwift/Other/DanTangSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Swift 学习/单糖Swift/DanTangSwift/Other/DanTangSwift-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -875,9 +882,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/DanTangSwift/Appdelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DSNAPKIT_DEPLOYMENT_LEGACY";
 				PRODUCT_BUNDLE_IDENTIFIER = oufei.com.DanTangSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/单糖Swift/DanTangSwift/Other/DanTangSwift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Swift 学习/单糖Swift/DanTangSwift/Other/DanTangSwift-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

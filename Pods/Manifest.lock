@@ -4,6 +4,7 @@ PODS:
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
+  - SnapKit (3.2.0)
   - SVProgressHUD (2.2.1)
   - SwiftyJSON (4.0.0-alpha.1)
 
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.5.1)
   - FDFullscreenPopGesture (~> 1.1)
   - SDWebImage (~> 4.1.0)
+  - SnapKit (~> 3.2.0)
   - SVProgressHUD (~> 2.2.1)
   - SwiftyJSON (~> 4.0.0-alpha.1)
 
@@ -18,9 +20,10 @@ SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
   SwiftyJSON: dc88934f85fb50b263b1632b9cbad3402505783e
 
-PODFILE CHECKSUM: 2ab2e44a92975d5589a8a55c027770843314c86d
+PODFILE CHECKSUM: 6c67fca0fc6891173485a1ff075ab123dba55183
 
 COCOAPODS: 1.3.1

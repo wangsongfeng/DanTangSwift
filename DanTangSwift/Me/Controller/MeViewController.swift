@@ -10,27 +10,58 @@ import UIKit
 
 class MeViewController: UIViewController {
 
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      view.backgroundColor=UIColor.red
+        setupTableView()
         
     }
+    
+    private func setupTableView() {
+        let tableView = UITableView()
+        tableView.frame = view.bounds
+        view.addSubview(tableView)
+        tableView.separatorStyle = .none
+        tableView.delegate = self;
+        tableView.dataSource = self
+        tableView.tableHeaderView = headerView
+    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private lazy var headerView : DTMeHeaderView = {
+        let headerView = DTMeHeaderView()
+        headerView.frame = CGRect.init(x: 0, y: 0, width: SCREENW, height: 200)
+       
+        return headerView
+    }()
+    
+  
+}
+
+extension MeViewController : UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
+        return cell
     }
-    */
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offSetY = scrollView.contentOffset.y
+        if offSetY < 0 {
+            var tempFrame = headerView.bgImageView.frame
+            tempFrame.origin.y = offSetY
+            tempFrame.size.height = 200 - offSetY
+            headerView.bgImageView.frame = tempFrame
+            
+        }
+        
+    }
 
 }
