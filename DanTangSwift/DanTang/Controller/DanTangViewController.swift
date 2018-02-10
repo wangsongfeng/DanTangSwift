@@ -43,9 +43,11 @@ class DanTangViewController: DTBaseViewController ,UIScrollViewDelegate{
     //设置标题栏
     func setupTitlesView() -> Void {
         //顶部背景
+        let allHeight = UIApplication.shared.statusBarFrame.height + (self.navigationController?.navigationBar.frame.height)!
         let bgView = UIView()
-        bgView.frame=CGRect.init(x: 0, y: 64, width: view.width, height: 35)
+        bgView.frame=CGRect.init(x: 0, y: allHeight, width: view.width, height: 35)
         view.addSubview(bgView)
+        bgView.backgroundColor = UIColor.red
         
         //标签
         let titlesView = UIView()
@@ -117,9 +119,10 @@ class DanTangViewController: DTBaseViewController ,UIScrollViewDelegate{
     
     //设置ScrollView
     func setupContentview() -> Void {
-        automaticallyAdjustsScrollViewInsets = false
+        let allHeight = UIApplication.shared.statusBarFrame.height + (self.navigationController?.navigationBar.frame.height)! + 35
+        
         let contentView = UIScrollView()
-        contentView.frame = CGRect.init(x: 0, y: 0, width: view.width, height: view.height)
+        contentView.frame = CGRect.init(x: 0, y: allHeight, width: view.width, height: view.height-allHeight)
         contentView.delegate=self
         contentView.contentSize = CGSize.init(width: contentView.width * CGFloat(childViewControllers.count), height: 0)
         contentView.isPagingEnabled = true

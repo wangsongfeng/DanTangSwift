@@ -18,4 +18,8 @@
     return self;
 }
 
+-(void)getname{
+    NSLog(@"我的名字是 松锋");
+}
+
 @end

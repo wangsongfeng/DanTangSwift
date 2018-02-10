@@ -16,6 +16,11 @@ class DTBaseViewController: UIViewController {
 
         view.backgroundColor = DTGlobalColor()
        navigationController?.fd_prefersNavigationBarHidden = true
+//        if #available(iOS 11.0, *){
+//            UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
+//        } else {
+//            automaticallyAdjustsScrollViewInsets = false
+//        }
         
         
     }

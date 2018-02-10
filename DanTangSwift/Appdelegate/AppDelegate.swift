@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor=UIColor.white
         window?.makeKeyAndVisible()
         window?.rootViewController=DTTabBarController()
+        
+        let person = Person.init(name: "王松锋")
+        person?.getname()
+        
 
 //        if !UserDefaults.standard.bool(forKey: "YMFirstLaunch") {
 //

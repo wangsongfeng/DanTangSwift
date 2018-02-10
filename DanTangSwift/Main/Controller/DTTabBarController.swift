@@ -34,7 +34,9 @@ class DTTabBarController: UITabBarController {
         var selectedimage = UIImage.init(named: imageName + "selected")
         selectedimage=selectedimage?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         controller.tabBarItem.selectedImage = selectedimage
+        
         controller.title=title
+        
         let nav = DTNavigationController.init(rootViewController: controller)
         addChildViewController(nav)
     }

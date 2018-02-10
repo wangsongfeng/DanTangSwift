@@ -15,7 +15,7 @@ class DanTangTopicController: UIViewController ,UITableViewDelegate , UITableVie
     
     lazy var mainTableView : UITableView = {
         let tableView = UITableView()
-        tableView.frame = CGRect.init(x: 0, y: 64+35, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height - (64+35))
+        tableView.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height - (0))
         tableView.rowHeight=160
         tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         tableView.delegate = self

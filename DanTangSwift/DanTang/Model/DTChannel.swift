@@ -19,5 +19,6 @@ class DTChannel: NSObject {
         name=dict["name"]as?String
         editable = dict["editable"]as?Bool
         
+        
     }
 }
